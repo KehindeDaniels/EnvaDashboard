@@ -1,11 +1,11 @@
 import React from 'react'
-import SideBAr from './SideBAr'
 import ContentArea from './ContentArea'
+import SidebarArea from './SidebarArea'
 
 const PageWrapper = () => {
   return (
-    <div>
-        <SideBar/>
+    <div className=' flex min-h-screen '>
+        <SidebarArea/>
         <ContentArea/>
     </div>
   )
