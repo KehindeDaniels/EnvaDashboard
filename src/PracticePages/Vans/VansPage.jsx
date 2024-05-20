@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import VansDetail from './VansDetail'
-import allVans from './data'
+import allVans from '../../data'
 
 
 const VansPage = () => {
@@ -10,6 +10,7 @@ const VansPage = () => {
 
 const vansElement = vans.map((van)=>(
   <>
+ 
    
       <div key={van.id} className="vanContainer max-w-64">
       <Link to={`/vansPage/${van.id}`}>
