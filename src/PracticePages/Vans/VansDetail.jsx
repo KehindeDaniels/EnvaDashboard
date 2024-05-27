@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import allVans from '../../data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 const VansDetail = () => {
     const params= useParams()
@@ -12,8 +14,13 @@ const VansDetail = () => {
         }
   return (
     <>
-        <div className="detailContainer">
-            <img src={van.imageUrl} alt={van.name} />
+    <Link to=".." relative="path">
+        <p className='px-8 underline hover:font-bold'>
+            <FontAwesomeIcon icon={faArrowLeft}/>
+            back to vans
+        </p></Link>
+        <div className="detailContainer p-8">
+            <img src={van.imageUrl} alt={van.name} className='w-80 rounded-lg' />
             <div className="description">
                 <h3 className='font-bold text-xl'>{van.name}</h3>
                 <p className="details">{van.description}</p>

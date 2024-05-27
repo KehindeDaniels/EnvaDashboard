@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link, NavLink, Outlet, useParams } from 'react-router-dom'
 import allVans from '../../../data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const HostVansDetails = () => {
     const [vans, setVans] = useState(allVans)
@@ -12,7 +14,11 @@ const HostVansDetails = () => {
     }
   return (
     <div className='bg-amber-50 h-screen p-8'>
-      <Link to=".." relative='path'><p>back to Vans</p></Link>  
+      <Link to=".." relative='path'>
+        <p className='underline'> 
+            <FontAwesomeIcon icon={faArrowLeft}/>
+            back to Vans
+        </p></Link>  
       <div className="vandetails bg-white mt-8 p-8">
             <div className="imageNamePrice flex gap-4">
                 <img src={van.imageUrl} alt={van.name} className='w-64 rounded-lg' />

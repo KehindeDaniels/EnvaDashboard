@@ -10,14 +10,13 @@ const VansPage = () => {
 
 const vansElement = vans.map((van)=>(
   <>
- 
    
       <div key={van.id} className="vanContainer max-w-64">
       <Link to={`/vansPage/${van.id}`}>
         <img src={van.imageUrl} alt={van.name} className='rounded-xl' />
         <div className="bottom">
           <div className="namePrice flex items-center justify-between">
-            <p>{van.name}</p>
+            <p className='font-bold text-xl text-amber-800'>{van.name}</p>
             <p>{`$${van.price}`}</p>
           </div>
           <button>Rent Now</button>

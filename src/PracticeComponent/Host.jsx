@@ -16,10 +16,10 @@ const Dashboard = () => {
    <>
 
     <div className='flex gap-16 mb-16'>
-        <NavLink to="/Host" end style={({isActive})=>isActive? ActiveStyle : null} >Dashboard</NavLink>
-        <NavLink to="Review" style={({isActive})=>isActive? ActiveStyle : null} >Review</NavLink>
-        <NavLink to="HostVans" style={({isActive})=>isActive? ActiveStyle : null} >Vans</NavLink>
-        <NavLink to="Income" style={({isActive})=>isActive? ActiveStyle : null} >Income</NavLink>
+        <NavLink to="/Host" end className={({isActive})=>isActive? "text-amber-500 font-medium underline" : "hover:underline hover:text-amber-500 hover:font-medium"} >Dashboard</NavLink>
+        <NavLink to="Review" className={({isActive})=>isActive? "text-amber-500 font-medium underline" : "hover:underline hover:text-amber-500 hover:font-medium"} >Review</NavLink>
+        <NavLink to="HostVans" className={({isActive})=>isActive? "text-amber-500 font-medium underline" : "hover:underline hover:text-amber-500 hover:font-medium"} >Vans</NavLink>
+        <NavLink to="Income" className={({isActive})=>isActive? "text-amber-500 font-medium underline" : "hover:underline hover:text-amber-500 hover:font-medium"} >Income</NavLink>
       </div>
       <Outlet/>
     </>
