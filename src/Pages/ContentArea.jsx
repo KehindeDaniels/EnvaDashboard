@@ -1,11 +1,11 @@
 import React from 'react'
-import NavBar from './NavBar'
-import Analytics from './Analytics'
+import NavBar from '../Components/NavBar'
+import Analytics from '../Components/Analytics'
 
 const ContentArea = () => {
   return (
     <div className='flex flex-col flex-grow bg-blue-50 gap-8'>
-        <NavBar/>
+        {/* <NavBar/> */}
         <Analytics/>
     </div>
   )
