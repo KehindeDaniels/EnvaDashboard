@@ -2,7 +2,7 @@ import React from 'react'
 
 const Clients = () => {
   return (
-    <div>Clientsok</div>
+    <div>Client page</div>
   )
 }
 
