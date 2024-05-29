@@ -42,7 +42,7 @@ const SidebarArea = () => {
 
 
   return (
-<aside className={`bg-blue-600 drop-shadow-xl shadow-xl min-h-screen transition-all duration-500 ${!collapsed ? 'w-64' : 'w-16'} `}>      <div className="p-8 text-white  flex items-center justify-between gap-8">
+<aside className={`bg-blue-600 drop-shadow-xl shadow-xl min-h-screen transition-all duration-500 ${!collapsed ? 'w-64' : 'w-16'}`}>      <div className="p-8 text-white  flex items-center justify-between gap-8">
         {!collapsed && <div className="text-2xl font-bold">EnvAccord</div>}
         <div className="hambugger" onClick={handleCollapsed}>
           <FontAwesomeIcon icon={faHamburger}/>
