@@ -35,7 +35,7 @@ const Header = () => {
           <div className="2nd-div">
             <div className="notification relative">
               <FontAwesomeIcon icon={faBell} className="h-6" />
-              <div className="notificationCount absolute bg-red-500 text-white w-4 h-4 text-xs rounded-full text-center bottom-4 left-2">
+              <div className="notificationCount absolute bg-blue-500 text-white w-4 h-4 text-xs rounded-full text-center bottom-4 left-2">
                 4
               </div>
             </div>
