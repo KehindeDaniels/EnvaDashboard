@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import SidebarArea from "../Components/SidebarArea";
 import NavBar from "../Components/NavBar";
@@ -8,13 +8,19 @@ import SideBar from "../Components/SideBar";
 import Footer from "../Components/Footer";
 
 const Layout = () => {
+  const [closeSidebar, setCloseSidebar] = useState();
+
+  function toggleSidebar() {
+    setCloseSidebar((prev) => !prev);
+  }
+
   return (
     <div className="layout flex h-dvh bg-blue-50">
       <div className="sidebar ">
-        <SideBar />
+        <SideBar toggleSidebar={toggleSidebar} closeSidebar={closeSidebar} />
       </div>
       <div className="flex flex-col flex-1">
-        <Header />
+        <Header toggleSidebar={toggleSidebar} />
         <main className="main flex-1">
           <Outlet />
         </main>

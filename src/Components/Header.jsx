@@ -6,17 +6,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import me from "../assets/me.jpg";
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   function toggleSearch() {
-    setIsCollapsed((prev) => !isCollapsed);
+    setIsCollapsed((prev) => !prev);
   }
   return (
     <>
       <header className="bg-white p-4 flex justify-between items-center">
         <div className="1st-div flex items-center gap-4">
-          <FontAwesomeIcon icon={faHamburger} />
+          <FontAwesomeIcon icon={faHamburger} onClick={toggleSidebar} />
           <div
             className={`search flex items-center gap-2 text-slate-400 transition-all duration-500 ${
               !isCollapsed ? "border py-1 px-3 w-48 rounded-full" : "w-8"
