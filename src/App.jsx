@@ -7,18 +7,17 @@ import Calender from "./Pages/Calender";
 
 export default function App() {
   return (
-   <>
-   <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<Inventory/>}/>
-          <Route path="sampleLog" element={<SampleLog/>}/>
-          <Route path="clients" element={<Clients/>}/>
-          <Route path="calender" element={<Calender/>}/>
-        </Route>
-      </Routes>
-   </BrowserRouter>
-   </>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Inventory />} />
+            <Route path="sampleLog" element={<SampleLog />} />
+            <Route path="clients" element={<Clients />} />
+            <Route path="calender" element={<Calender />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
-
