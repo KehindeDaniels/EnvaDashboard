@@ -1,4 +1,3 @@
-// App.js
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Inventory from "./Layout/Inventory";
@@ -12,7 +11,7 @@ import Files from "./Pages/Files";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/EnvaDashboard">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Overview />} />
