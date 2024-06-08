@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Consumables = () => {
-  return (
-    <div>Consumables</div>
-  )
-}
+  return <div>Consumabsles</div>;
+};
 
-export default Consumables
+export default Consumables;

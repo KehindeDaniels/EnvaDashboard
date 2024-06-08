@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentArea from './ContentArea'
+import ContentArea from '../Pages/ContentArea'
 import SidebarArea from './SidebarArea'
 
 const PageWrapper = () => {
