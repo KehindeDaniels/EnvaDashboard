@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Files = () => {
-  return (
-    <div>Files</div>
-  )
-}
+  return <div>Filxes</div>;
+};
 
-export default Files
+export default Files;
