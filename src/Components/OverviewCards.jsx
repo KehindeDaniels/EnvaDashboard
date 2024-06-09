@@ -31,7 +31,7 @@ const OverviewCards = () => {
     },
     {
       name: "Reordered Items",
-      count: 1256,
+      count: 123,
       percentage: 3.2,
       remark: "New Items",
       icon: cart,
@@ -39,7 +39,10 @@ const OverviewCards = () => {
   ];
 
   const cardElements = cards.map((c, index) => (
-    <div key={index} className="flex-1 border border-b-gray-300 p-4">
+    <div
+      key={index}
+      className="flex flex-col border border-b-gray-300 p-4 w-full h-full items-center justify-center"
+    >
       <div className="card-name flex items-center gap-2 mb-2">
         <img src={c.icon} alt={c.name} className="w-8 h-8" />
         <p className="font-semibold">{c.name}</p>
@@ -55,7 +58,7 @@ const OverviewCards = () => {
   ));
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
       {cardElements}
     </div>
   );
