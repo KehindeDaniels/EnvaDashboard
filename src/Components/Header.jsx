@@ -14,7 +14,7 @@ const Header = ({ toggleSidebar }) => {
   }
   return (
     <>
-      <header className="bg-white p-4 flex justify-between items-center">
+      <header className="bg-blue-50 p-4 flex justify-between items-center">
         <div className="1st-div flex items-center gap-4">
           <FontAwesomeIcon icon={faHamburger} onClick={toggleSidebar} />
           <div

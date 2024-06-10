@@ -52,7 +52,7 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
     <li
       key={index}
       onClick={() => toggleCollapseNavigation(index)}
-      className="text-white flex flex-col gap-2 transition-all duration-500"
+      className="text-white flex flex-col gap-2 transition-all duration-500 z-10"
     >
       <div className="flex gap-4 items-center hover:bg-white/20 px-4 py-3 transition-colors duration-300">
         <FontAwesomeIcon icon={n.navIcon} />

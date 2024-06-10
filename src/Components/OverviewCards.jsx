@@ -11,14 +11,14 @@ const OverviewCards = () => {
     {
       name: "Total Items",
       count: 1256,
-      percentage: 3.2,
-      remark: "New Items",
+      percentage: "Total Items",
+      remark: "12 New Items",
       icon: items,
     },
     {
       name: "Low Stock",
       count: 110,
-      percentage: 3.2,
+      percentage: "",
       remark: "97 out of stock 23 low in stock",
       icon: stock,
     },
@@ -33,7 +33,7 @@ const OverviewCards = () => {
       name: "Reordered Items",
       count: 123,
       percentage: 3.2,
-      remark: "New Items",
+      remark: "24 New Items Added",
       icon: cart,
     },
   ];
@@ -41,16 +41,26 @@ const OverviewCards = () => {
   const cardElements = cards.map((c, index) => (
     <div
       key={index}
-      className="flex flex-col border border-b-gray-300 p-4 w-full h-full items-center justify-center"
+      className={`flex flex-col items-start p-4 rounded-md justify-center  ${
+        index === 0
+          ? "bg-blue-500 text-white"
+          : "bg-transparent text-gray-700 border border-gray-50`"
+      }`}
     >
-      <div className="card-name flex items-center gap-2 mb-2">
-        <img src={c.icon} alt={c.name} className="w-8 h-8" />
-        <p className="font-semibold">{c.name}</p>
+      <div className="card-name flex flex-col items-start justify-start gap-2 mb-2">
+        <img
+          src={c.icon}
+          alt={c.name}
+          className={`w-5 h-w-5 ${
+            index === 0 && "bg-white/30 rounded-full w-8 p-1"
+          }`}
+        />
+        <p className="text-xs">{c.name}</p>
       </div>
-      <div className="card-count flex items-center gap-2 text-xl font-bold mb-2">
+      <div className="card-count flex items-center gap-2 text-2xl font-bold mb-2">
         {c.count}
         <span className="text-sm text-green-500">
-          {c.percentage}% <FontAwesomeIcon icon={faArrowDown} />
+          {/* {c.percentage}% <FontAwesomeIcon icon={faArrowDown} /> */}
         </span>
       </div>
       <p className="text-xs">{c.remark}</p>
