@@ -1,3 +1,6 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons/faArrowDown";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
@@ -45,7 +48,13 @@ const Inventory = () => {
             onClick={toggleDropdown}
             className="text-gray-700 font-bold py-2 px-4 border border-gray-300 rounded"
           >
-            {activeLink}
+            {activeLink}{" "}
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className={`transition-all duration-200 ${
+                isDropdownOpen && "rotate-180"
+              }`}
+            />
           </button>
           {isDropdownOpen && (
             <ul className="absolute left-0 top-full mt-2 w-1/2 bg-white border border-gray-300 rounded shadow-lg">
