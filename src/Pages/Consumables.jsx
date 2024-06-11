@@ -1,7 +1,7 @@
 import React from "react";
 
 const Consumables = () => {
-  return <div>Consumabsles</div>;
+  return <div className="text-2xl">Dem never pay me for this page</div>;
 };
 
 export default Consumables;

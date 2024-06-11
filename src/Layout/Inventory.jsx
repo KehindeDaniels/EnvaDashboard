@@ -10,9 +10,15 @@ const Inventory = () => {
   ];
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(navLinks[0].name);
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);
+  };
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link.name);
+    setIsDropdownOpen(false);
   };
 
   const navLinkElements = navLinks.map((n, index) => (
@@ -22,7 +28,8 @@ const Inventory = () => {
         className={({ isActive }) =>
           isActive ? "text-blue-500 font-bold" : "text-gray-700"
         }
-        onClick={() => setIsDropdownOpen(false)}
+        end
+        onClick={() => handleLinkClick(n)}
       >
         {n.name}
       </NavLink>
@@ -38,7 +45,7 @@ const Inventory = () => {
             onClick={toggleDropdown}
             className="text-gray-700 font-bold py-2 px-4 border border-gray-300 rounded"
           >
-            {navLinks[0].name}
+            {activeLink}
           </button>
           {isDropdownOpen && (
             <ul className="absolute left-0 top-full mt-2 w-1/2 bg-white border border-gray-300 rounded shadow-lg">
