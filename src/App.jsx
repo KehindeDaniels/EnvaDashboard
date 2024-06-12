@@ -10,22 +10,5 @@ import Consumables from "./Pages/Consumables";
 import Files from "./Pages/Files";
 
 export default function App() {
-  return (
-    <BrowserRouter basename="/EnvaDashboard">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Overview />} />
-          <Route path="inventory" element={<Inventory />}>
-            <Route index element={<Overview />} />
-            <Route path="items" element={<Items />} />
-            <Route path="consumables" element={<Consumables />} />
-            <Route path="files" element={<Files />} />
-          </Route>
-          <Route path="sampleLog" element={<SampleLog />} />
-          <Route path="clients" element={<Clients />} />
-          <Route path="calendar" element={<Calender />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+  return <div className="">Table</div>;
 }
