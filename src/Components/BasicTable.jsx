@@ -1,10 +1,11 @@
 import React, { useMemo } from "react";
-import { Columns } from "./columns";
+import { Columns, GroupedCols } from "./columns";
 import mockData from "./MOCK_DATA.json";
 import { useTable } from "react-table";
 
 const BasicTable = () => {
   //   const columns = useMemo(() => Columns, []);
+
   //   const data = useMemo(() => mockData, []);
   //   const tableInstance = useTable({ columns, data });
 
@@ -53,7 +54,7 @@ const BasicTable = () => {
               <tr {...row.getRowProps()} key={row.id}>
                 {row.cells.map((cell) => (
                   <td
-                    {...cell.getCellProps}
+                    {...cell.getCellProps()}
                     key={cell.id}
                     className="px-6 py-4 whitespace-nowrap"
                   >
@@ -70,7 +71,7 @@ const BasicTable = () => {
           {footerGroups.map((fG) => (
             <tr {...fG.getFooterGroupProps()}>
               {fG.headers.map((column) => (
-                <td {...column.getFooterProps}>
+                <td {...column.getFooterProps()}>
                   {column.render("Footer")} className="divide-y-4
                   divide-green-200 mx-auto divide-x-2 bg-green-300"
                 </td>
