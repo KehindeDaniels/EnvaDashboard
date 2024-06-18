@@ -1,8 +1,41 @@
-# React + Vite
+# EnvAccord Dashboard                    
+  
+## Overview
+EnvAccord dashboard is a tracking and management system for inventories                    
+  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
+- **React**: Front-end library for building user interfaces.
+- **Vite**: Fast build tool and development server.
+- **TailwindCSS**: Utility-first CSS framework for styling.
+- **Tanstack**: For table state management.                    
+  
+- **React Router**: For client-side routing.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)                    
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+## Figma Link                    
+  https://www.figma.com/design/MAWyTT72uIPiNuLMxDheav/Envaccord-Inventory?node-id=163-7183&t=zB7MF75mlIKtlAHX-1
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash                                                                                                                                                                                                           
+   git clone <repository-link>
+   
+2. **Navigate to the Project Directory**:                                                            
+cd <project-directory>
+
+3. **Install Dependencies**:                                                                                                                                             
+ ``bash
+  npm install
+``
+5. **Running the Development Server**                                                                                                                                            
+  To start the development server                                                                              
+  ```bash
+npm run dev
