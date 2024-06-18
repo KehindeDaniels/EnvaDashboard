@@ -26,7 +26,7 @@ Make sure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash                                                                                                                                                                                                           
-   git clone <repository-link>
+   git clone https://github.com/KehindeDaniels/EnvaDashboard.git
    
 2. **Navigate to the Project Directory**:                                                            
 cd <project-directory>
