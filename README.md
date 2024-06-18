@@ -20,7 +20,7 @@ Make sure you have the following installed:
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ## Figma Link                    
-  https://www.figma.com/design/MAWyTT72uIPiNuLMxDheav/Envaccord-Inventory?node-id=163-7183&t=zB7MF75mlIKtlAHX-1
+  [Figma linl](https://www.figma.com/design/MAWyTT72uIPiNuLMxDheav/Envaccord-Inventory?node-id=163-7183&t=zB7MF75mlIKtlAHX-1)
 
 ### Installation
 
