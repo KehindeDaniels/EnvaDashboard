@@ -41,7 +41,7 @@ const Inventory = () => {
 
   return (
     <>
-      <nav className="py-8 px-16">
+      <nav className="p-4 sm:px-8">
         <div className="hidden md:flex gap-8">{navLinkElements}</div>
         <div className="md:hidden relative">
           <button
