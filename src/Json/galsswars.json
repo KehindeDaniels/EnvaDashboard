@@ -1,0 +1,192 @@
+[
+  {
+    "id": 0,
+    "name": "Beaker",
+    "category": "Glassware",
+    "quantity": 50,
+    "supplier": "GlassCorp",
+    "cost_per_unit": 5.5,
+    "location": "Lab",
+    "date_of_purchase": "2023-05-10",
+    "condition": "New",
+    "material": "Borosilicate",
+    "capacity": "500ml",
+    "dimensions": {
+      "height": 12,
+      "diameter": 10
+    },
+    "usage_frequency": "Daily",
+    "reorder_level": 10
+  },
+  {
+    "id": 1,
+    "name": "Flask",
+    "category": "Glassware",
+    "quantity": 30,
+    "supplier": "LabWare",
+    "cost_per_unit": 7.25,
+    "location": "Lab",
+    "date_of_purchase": "2024-03-15",
+    "condition": "Good",
+    "material": "Soda-lime",
+    "capacity": "250ml",
+    "dimensions": {
+      "height": 15,
+      "diameter": 8
+    },
+    "usage_frequency": "Weekly",
+    "reorder_level": 5
+  },
+  {
+    "id": 2,
+    "name": "Test Tube",
+    "category": "Glassware",
+    "quantity": 100,
+    "supplier": "BioGlass",
+    "cost_per_unit": 1.1,
+    "location": "Lab",
+    "date_of_purchase": "2023-11-22",
+    "condition": "New",
+    "material": "Quartz",
+    "capacity": "50ml",
+    "dimensions": {
+      "height": 10,
+      "diameter": 2
+    },
+    "usage_frequency": "Daily",
+    "reorder_level": 20
+  },
+  {
+    "id": 3,
+    "name": "Petri Dish",
+    "category": "Glassware",
+    "quantity": 80,
+    "supplier": "GlassCorp",
+    "cost_per_unit": 3.75,
+    "location": "Lab",
+    "date_of_purchase": "2024-01-10",
+    "condition": "Good",
+    "material": "Borosilicate",
+    "capacity": "100ml",
+    "dimensions": {
+      "height": 2,
+      "diameter": 10
+    },
+    "usage_frequency": "Weekly",
+    "reorder_level": 15
+  },
+  {
+    "id": 4,
+    "name": "Graduated Cylinder",
+    "category": "Glassware",
+    "quantity": 25,
+    "supplier": "LabWare",
+    "cost_per_unit": 10.5,
+    "location": "Lab",
+    "date_of_purchase": "2023-07-15",
+    "condition": "Worn",
+    "material": "Soda-lime",
+    "capacity": "500ml",
+    "dimensions": {
+      "height": 25,
+      "diameter": 5
+    },
+    "usage_frequency": "Monthly",
+    "reorder_level": 5
+  },
+  {
+    "id": 5,
+    "name": "Pipette",
+    "category": "Glassware",
+    "quantity": 60,
+    "supplier": "BioGlass",
+    "cost_per_unit": 4.2,
+    "location": "Lab",
+    "date_of_purchase": "2023-02-25",
+    "condition": "New",
+    "material": "Quartz",
+    "capacity": "10ml",
+    "dimensions": {
+      "height": 20,
+      "diameter": 1
+    },
+    "usage_frequency": "Daily",
+    "reorder_level": 10
+  },
+  {
+    "id": 6,
+    "name": "Watch Glass",
+    "category": "Glassware",
+    "quantity": 45,
+    "supplier": "GlassCorp",
+    "cost_per_unit": 2.75,
+    "location": "Lab",
+    "date_of_purchase": "2024-06-10",
+    "condition": "Good",
+    "material": "Borosilicate",
+    "capacity": "150ml",
+    "dimensions": {
+      "height": 1,
+      "diameter": 15
+    },
+    "usage_frequency": "Weekly",
+    "reorder_level": 10
+  },
+  {
+    "id": 7,
+    "name": "Burette",
+    "category": "Glassware",
+    "quantity": 20,
+    "supplier": "LabWare",
+    "cost_per_unit": 12.0,
+    "location": "Lab",
+    "date_of_purchase": "2024-09-05",
+    "condition": "New",
+    "material": "Soda-lime",
+    "capacity": "50ml",
+    "dimensions": {
+      "height": 30,
+      "diameter": 2
+    },
+    "usage_frequency": "Monthly",
+    "reorder_level": 5
+  },
+  {
+    "id": 8,
+    "name": "Volumetric Flask",
+    "category": "Glassware",
+    "quantity": 35,
+    "supplier": "BioGlass",
+    "cost_per_unit": 15.75,
+    "location": "Lab",
+    "date_of_purchase": "2023-03-20",
+    "condition": "New",
+    "material": "Quartz",
+    "capacity": "1000ml",
+    "dimensions": {
+      "height": 20,
+      "diameter": 10
+    },
+    "usage_frequency": "Monthly",
+    "reorder_level": 8
+  },
+  {
+    "id": 9,
+    "name": "Funnel",
+    "category": "Glassware",
+    "quantity": 55,
+    "supplier": "GlassCorp",
+    "cost_per_unit": 3.5,
+    "location": "Lab",
+    "date_of_purchase": "2023-12-01",
+    "condition": "Good",
+    "material": "Borosilicate",
+    "capacity": "250ml",
+    "dimensions": {
+      "height": 8,
+      "diameter": 5
+    },
+    "usage_frequency": "Daily",
+    "reorder_level": 10
+  }
+]
