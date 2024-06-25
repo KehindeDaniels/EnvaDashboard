@@ -15,7 +15,7 @@ const Layout = () => {
   }
 
   return (
-    <div className="layout flex h-dvh">
+    <div className="layout flex ">
       <div className="sidebar z-10">
         <SideBar toggleSidebar={toggleSidebar} closeSidebar={closeSidebar} />
       </div>
@@ -24,7 +24,7 @@ const Layout = () => {
         <main className="main flex-1">
           <Outlet />
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
