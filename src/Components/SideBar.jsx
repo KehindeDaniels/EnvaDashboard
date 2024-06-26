@@ -83,7 +83,7 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
 
   return (
     <aside
-      className={`fixed w-64 sm:sticky sm:top-0 sm:w-64 bg-blue-500 h-dvh ${
+      className={`fixed w-64 sm:sticky sm:top-0 sm:w-64 bg-blue-500 h-full ${
         closeSidebar && "hidden"
       }`}
     >
