@@ -37,6 +37,9 @@ const ExpiryTable = () => {
           </div>
         </div>
         <MaterialReactTable columns={chemColumn} data={chemMockData} />
+        <div className="mt-8">
+          <MaterialReactTable columns={chemColumn} data={chemMockData} />
+        </div>
       </div>
     </>
   );
