@@ -19,7 +19,7 @@ const ExpiryTable = () => {
 
   return (
     <>
-      <div className="table-container">
+      <div className="table-container w-96 overflow-auto">
         <div className="table-heading bg-blue-50 mt-16 p-4 flex justify-between flex-wrap">
           <div className="name flex items-center gap-4">
             <img src={expiry} alt="expiry icon" className="w-14 h-14" />
