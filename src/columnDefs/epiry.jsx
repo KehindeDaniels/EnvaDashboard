@@ -1,4 +1,4 @@
-import { parseISO, differenceInDays } from "date-fns";
+import { parseISO, differenceInCalendarDays, startOfDay } from "date-fns";
 
 export const expiryColumnDef = [
   {
@@ -18,22 +18,32 @@ export const expiryColumnDef = [
   },
   {
     header: "Days to Expiration",
-    accessorKey: "expiry_date",
+    accessorKey: "days_to_expiration",
     cell: ({ row }) => {
-      const expiryDate = parseISO(row.original.expiry_date);
-      const today = new Date();
-      const daysToExpiration = differenceInDays(expiryDate, today);
+      const expiryDate = startOfDay(parseISO(row.original.expiry_date));
+      const today = startOfDay(new Date());
+      const daysToExpiration = differenceInCalendarDays(expiryDate, today);
+      console.log(
+        `Expiry Date: ${
+          row.original.expiry_date
+        }, Today: ${today.toISOString()}, Days to Expiration: ${daysToExpiration}`
+      );
       return <div>{daysToExpiration}</div>;
     },
   },
   {
     header: "Status",
-    accessorKey: "expiry_date",
+    accessorKey: "status",
     cell: ({ row }) => {
-      const expiryDate = parseISO(row.original.expiry_date);
-      const today = new Date();
+      const expiryDate = startOfDay(parseISO(row.original.expiry_date));
+      const today = startOfDay(new Date());
       const isExpired = expiryDate < today;
-      return <div>{isExpired ? "Expired" : "Not Expired"}</div>;
+      console.log(
+        `Expiry Date: ${
+          row.original.expiry_date
+        }, Today: ${today.toISOString()}, Expired: ${isExpired}`
+      );
+      return <div>{isExpired ? "Expired" : "Expiring Soon"}</div>;
     },
   },
 ];
